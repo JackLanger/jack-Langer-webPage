@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="../Styles/MainStyle.css" rel="stylesheet" />
+    <title>Jack Langer Home</title>
+    <script src="../Scripts/projectsAnimation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../Scripts\forms.js"></script>
+  </head>
+
+  <body>
+    <div class="Hero-Landing" id="home">
+      <div class="Hero-Text">
+        <h1>Jack Langer</h1>
+        <h2>software developer, adventurer and chef</h2>
+      </div>
+    </div>
+
+    <header>
+      <nav class="nav">
+        <ul class="nav_list">
+          <a id="nav-myprojects" href="#home">home</a>
+          <a id="nav-myprojects" href="#projects-anchor">projects</a>
+          <a id="nav-myprojects" href="#aboutMe-anchor">about me</a>
+          <a href="#mail">mail me</a>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <section id="MyProjects">
+        <div class="content-text">
+          <h1>Projects</h1>
+        </div>
+        <br />
+        <a class="anchor" id="projects-anchor"></a>
+
+        <div
+          class="Projects"
+          id="TaskHub"
+          onclick="showDetails(0,'TaskHubUi.png')"
+        >
+          <div class="Project-Body">
+            <img id="TaskHubImage" src="\Media\TaskHubUi.png" alt="TaskHub" />
+          </div>
+          <p>taskHub</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="Finanzplaner"
+          onclick="showDetails(1,'FinanzplanerUi.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\FinanzplanerUi.png" alt="Finanzplaner" />
+          </div>
+          <p>Finanzplaner</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="SimpleCalculator"
+          onclick="showDetails(3,'CalculatorUi.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\CalculatorUi.png" alt="Simple Calculator" />
+          </div>
+          <p>Calculator</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="Brickbreaker"
+          onclick="showDetails(2,'Breakout.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\Breakout.png" alt="Brickbreacker" />
+          </div>
+          <p>Breakout Brickbreaker</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="BackpackersWorldData"
+          onclick="showDetails(4,'WorlddataCountry.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\BackpackersWorldData.png" alt="WorldData" />
+          </div>
+          <p>Backpackers World Data</p>
+        </div>
+      </section>
+      <section class="main-content" id="aboutMe">
+        <a class="anchor" id="aboutMe-anchor"></a>
+        <div class="content-container">
+          <article id="about-me-article">
+            <span>
+              <h1>About me</h1>
+              <p>
+                I'm a software developer and traveler, with a background in
+                cheffing. Which not only made it possible to travel for almost
+                four years but to also meet people, make new friends and
+                experience countries and cultures in a unique way.
+              </p>
+              <p>
+                As a chef I worked at several big and small Hotels, restaurants,
+                bars and cafees, including the
+                <a
+                  href="https://www.goodfood.com.au/cakes-and-ale-sorrento/cakes-and-ale-20151130-473qf"
+                  >Cakes and Ale Sorrento
+                </a>
+                in Victoria, Australia and the
+                <a href="https://www.foolsofdesire.co.nz/">Fools of Desire</a>
+                in Rangiora, Newzealand. The
+                <a href="https://all.accor.com/usa/index.en.shtml"
+                  >Accor Group</a
+                >
+                as well as
+                <a href="https://www.marriott.com/default.mi">Marriott</a> to
+                name a few.
+              </p>
+              <p>
+                etwas über meine Fähigkeiten zum ganzheitlichen und out of the box thinking
+                
+
+              </p>
+              <p>
+                I've been writing Software for the good part of the last 9
+                months now, while I've been working fulltime as a headchef in a
+                <u>Pforzheim</u> Kindergarden. Dedicating my sparetime to learn
+                software development, with the intention of creating an
+                Application to efficently write menus and recepies.
+              </p>
+            </span>
+          </article>
+          <div class="polaroid">
+            <img
+              src="Media\food\Flammkuchen mit Ziegenkäse Walnuss und Apfel.jpg"
+              alt="tarte flambe with walnuts and goats cheese"
+            />
+            <p>tarte flambe with walnuts and goats cheese</p>
+          </div>
+          <div class="polaroid">
+            <img
+              src="Media\food\Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme.jpg"
+              alt="scallops with grany smith salad with a fennel dressing, pistacio butter and macha icecreame"
+            />
+            <p>
+              scallops with grany smith salad with a fennel dressing, pistacio
+              butter and macha icecreame
+            </p>
+          </div>
+          <div class="polaroid">
+            <img
+              src="Media\food\lachspoke currycustard ginger foam.png"
+              alt="salmon poke on curry custard ginger foam and water cress"
+            />
+            <p>salmon poke on curry custard ginger foam and water cress</p>
+          </div>
+        </div>
+      </section>
+    </article>
+    <br /><br />
+
+    <article id="mailing-section">
+      <form onsubmit="submitForm()" id="mail" name="EmailForm">
+        <input
+          class="contact-input"
+          type="text"
+          size="19"
+          name="ContactName"
+          placeholder="Name"
+          required
+        /><br /><br />
+        <input
+          class="contact-input"
+          type="text"
+          size="19"
+          name="ContactSubject"
+          placeholder="Subject"
+          required
+        />
+        <br /><br />
+        <textarea
+          class="contact-textarea"
+          id="contact-Comment"
+          name="ContectComment"
+          placeholder="your message"
+          required
+        ></textarea>
+        <br /><br />
+        <input class="form-button" id="send-mail" type="submit" value="send" />
+      </form>
+    </article>
+
+    <br />
+    <footer>
+      <div class="footer-content">
+        <p>copyright</p>
+        <p>disclaimer</p>
+        <div class="social-media-link">
+          <a
+            id="linked"
+            href="https://www.linkedin.com/in/jacek-langer-259431142/"
+            >Linked<strong id="linkedIn-text">In</strong></a
+          >
+          <a id="git" href="https://github.com/JackLanger"
+            ><img src="\Media\GitHub-Mark-32px.png" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <form
+id="mail" 
+method="POST" 
+enctype="multipart/form-data"
+name="EmailForm"> -->
