@@ -1,6 +1,12 @@
 var detailsOpen = false;
 var selectedLanguage = document.documentElement.lang;
 
+
+ /**
+  * build an overlay box to display
+  * @param {int} id 
+  * @param {string} image 
+  */
 function showDetails(id, image) {
   console.log(id, image);
   const projects = document.querySelectorAll(".Projects");
@@ -153,6 +159,8 @@ function blur() {
 
 /**
  * fetch textdata from local files and fill the details
+ * @param {int} id
+ * @param {string} container
  */
 
 function getText(id, container) {
@@ -211,7 +219,7 @@ function resetHeight() {
 /**
  * shows an element with infotext
  *
- * param="info", class name
+ * @param {int} id
  */
 function showInfo(id) {
   
@@ -230,7 +238,10 @@ function showInfo(id) {
   }
   
 }
-
+/**
+ * hide the text for the element with the id
+ * @param {int} id 
+ */
 function hideInfo(id) {
   let info = document.getElementsByClassName("info-box");
   
@@ -238,6 +249,10 @@ function hideInfo(id) {
       info[id].style.display = "none";
 }
 
+/**
+ * select the langage 
+ * @param {string} language 
+ */
 
 function changeLanguage(language)
 {
