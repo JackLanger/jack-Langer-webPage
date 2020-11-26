@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="../Styles/MainStyle.css" rel="stylesheet" />
+    <title>Jack Langer Home</title>
+    <script src="../Scripts/projectsAnimation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../Scripts\forms.js"></script>
+  </head>
+
+  <body>
+    <div class="Hero-Landing" id="home">
+      <div class="Hero-Text">
+        <h1>Jack Langer</h1>
+        <h2>software developer, adventurer and chef</h2>
+      </div>
+    </div>
+
+    <header>
+      <nav class="nav">
+        <ul class="nav_list">
+          <a id="nav-myprojects" href="#home">home</a>
+          <a id="nav-myprojects" href="#projects-anchor">projects</a>
+          <a id="nav-myprojects" href="#aboutMe-anchor">who's Jack</a>
+          <a href="#mail">mail me</a>
+            <ul id="nav-language" onmouseover="showLanguages()" onmouseout="resetHeight()">
+              <a id="nav-myprojects" href="Index-en.html">en</a>
+              <a id="nav-myprojects" href="Index-de.html">de</a>
+            </ul>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+      <section id="MyProjects">
+        <div class="content-text">
+          <h1>Projects</h1>
+        </div>
+        <br />
+        <a class="anchor" id="projects-anchor"></a>
+
+        <div
+          class="Projects"
+          id="TaskHub"
+          onclick="showDetails(0,'TaskHubUi.png')"
+        >
+          <div class="Project-Body">
+            <img id="TaskHubImage" src="\Media\TaskHubUi.png" alt="TaskHub" />
+          </div>
+          <p>taskHub</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="Finanzplaner"
+          onclick="showDetails(1,'FinanzplanerUi.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\FinanzplanerUi.png" alt="Finanzplaner" />
+          </div>
+          <p>Finanzplaner</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="Brickbreaker"
+          onclick="showDetails(2,'Breakout.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\Breakout.png" alt="Brickbreacker" />
+          </div>
+          <p>Breakout Brickbreaker</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="SimpleCalculator"
+          onclick="showDetails(3,'CalculatorUi.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\CalculatorUi.png" alt="Simple Calculator" />
+          </div>
+          <p>Calculator</p>
+        </div>
+
+        <div
+          class="Projects"
+          id="BackpackersWorldData"
+          onclick="showDetails(4,'WorlddataCountry.png')"
+        >
+          <div class="Project-Body">
+            <img src="\Media\BackpackersWorldData.png" alt="WorldData" />
+          </div>
+          <p>Backpackers World Data</p>
+        </div>
+      </section>
+      <section class="main-content" id="aboutMe">
+        <a class="anchor" id="aboutMe-anchor"></a>
+        <div class="content-container">
+          <div class="left">
+            <article id="about-me-article">
+              <span class="flex-content">
+                <h1>About me</h1>
+                <p>
+                  I'm a Software developer and chef with a love for computers and travelling.
+                </p>
+                <p>
+                  Having a background in cheffing, I worked at several big Hotels, finedine
+                  restaurants, and relaxed cafees and busy bars.
+                </p>
+                <p> The most notable would be the
+                  <a
+                    href="https://www.goodfood.com.au/cakes-and-ale-sorrento/cakes-and-ale-20151130-473qf"
+                    >Cakes and Ale Sorrento
+                  </a>
+                  in Victoria, Australia,
+                  <a href="https://www.foolsofdesire.co.nz/">Fools of Desire</a>
+                  in Rangiora, New Zealand and 
+  
+                  <a href="https://www.das-goldene-lamm.de/">das Goldene Lamm</a> in Aalen, where I worked
+                  as <u class="info" onmouseover="showInfo(0)" onmouseout="hideInfo(0)">sous chef</u><span class="info-box"></span>.
+                </p>
+                <p>
+                  When it comes to work my focal points are economics and process optimization.
+                </p>
+                <p>
+                  Since early 2020 I'm writing software, while working
+                  fulltime as a headchef in a
+                  <u class="info" onmouseover="showInfo(1)" onmouseout="hideInfo(1)">Pforzheim</u><span class="info-box"></span> Kindergarden.
+                </p>
+                <p>
+                  <h1>Languages</h1>
+                  <ul style="list-style:none;">
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Html</li>
+                  </ul>
+                </p>
+              </span>
+            </article>
+            </div>
+            <div class="right">
+              <div class="polaroid">
+                <img
+                  src="Media\food\Flammkuchen mit Ziegenkäse Walnuss und Apfel.jpg"
+                  alt="tarte flambe with walnuts and goats cheese"
+                />
+                <p>tarte flambe with walnuts and goats cheese</p>
+              </div>
+              <div class="polaroid">
+                <img
+                  src="Media\food\Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme.jpg"
+                  alt="scallops with grany smith salad with a fennel dressing, pistacio butter and macha icecreame"
+                />
+                <p>
+                  scallops with grany smith salad with a fennel dressing, pistacio
+                  butter and macha icecreame
+                </p>
+              </div>
+              <div class="polaroid">
+                <img
+                  src="Media\food\lachspoke currycustard ginger foam.png"
+                  alt="salmon poke on curry custard ginger foam and water cress"
+                />
+                <p>salmon poke on curry custard ginger foam and water cress</p>
+              </div>
+            </div>          
+        </div>
+      </section>
+    </article>
+    <br /><br />
+
+    <article id="mailing-section">
+      <form onsubmit="submitForm()" id="mail" name="EmailForm">
+        <input
+          class="contact-input"
+          type="text"
+          size="19"
+          name="ContactName"
+          placeholder="Name"
+          required
+        /><br /><br />
+        <input
+          class="contact-input"
+          type="text"
+          size="19"
+          name="ContactSubject"
+          placeholder="Subject"
+          required
+        />
+        <br /><br />
+        <textarea
+          class="contact-textarea"
+          id="contact-Comment"
+          name="ContectComment"
+          placeholder="your message"
+          required
+        ></textarea>
+        <br /><br />
+        <input class="form-button" id="send-mail" type="submit" value="send" />
+      </form>
+    </article>
+
+    <br />
+    <footer>
+      <div class="footer-content">
+        <p>copyright</p>
+        <p>disclaimer</p>
+        <div class="social-media-link">
+          <a
+            id="linked"
+            href="https://www.linkedin.com/in/jacek-langer-259431142/"
+            >Linked<strong id="linkedIn-text">In</strong></a
+          >
+          <a id="git" href="https://github.com/JackLanger"
+            ><img src="\Media\GitHub-Mark-32px.png" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <form
+id="mail" 
+method="POST" 
+enctype="multipart/form-data"
+name="EmailForm"> -->

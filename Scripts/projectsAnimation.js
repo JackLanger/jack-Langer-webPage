@@ -1,7 +1,7 @@
 var detailsOpen = false;
 
-function showDetails(id,image) {
-  console.log(id,image)
+function showDetails(id, image) {
+  console.log(id, image);
   const projects = document.querySelectorAll(".Projects");
   const projectContainer = document.getElementById("MyProjects");
   const mail = document.getElementById("mail");
@@ -32,7 +32,6 @@ function showDetails(id,image) {
     */
 
     projectContainer.appendChild(background);
-    
 
     blur();
 
@@ -56,7 +55,7 @@ function showDetails(id,image) {
     closerDiv.style.height = "70px";
     closer.style.color = "#ccc";
 
-    let html = "<img class='details-image' src = '" + image + "'/>"
+    let html = "<img class='details-image' src = '" + image + "'/>";
 
     pictureContainer.innerHTML = html;
 
@@ -75,20 +74,18 @@ function showDetails(id,image) {
     });
     getText(id, infotextContainer);
 
+    background.style.top = scrollY + 100 + "px";
 
-    background.style.top = scrollY +100+"px";
-
-    window.addEventListener('scroll',()=>{
+    window.addEventListener("scroll", () => {
       console.log(window.scrollY);
 
-      background.style.top = scrollY+100+"px";
+      background.style.top = scrollY + 100 + "px";
     });
 
-    background.addEventListener('click',()=>{
-      console.log('click');
+    background.addEventListener("click", () => {
+      console.log("click");
       closeDetails();
     });
-
   }
 }
 
@@ -96,7 +93,7 @@ function showDetails(id,image) {
  * close the details window and unblur background
  */
 function closeDetails() {
-  console.log('closeDetails');
+  console.log("closeDetails");
   if (!detailsOpen) {
     return;
   }
@@ -114,13 +111,13 @@ function unBlur() {
   const projects = document.querySelectorAll(".Projects");
   const mail = document.getElementById("mail");
   const hero = document.getElementById("home");
-  const text = document.getElementsByClassName('content-text');
-  const content = document.getElementsByClassName('content-container');
+  const text = document.getElementsByClassName("content-text");
+  const content = document.getElementsByClassName("content-container");
 
-  for(let x= 0 ; x<text.length;x++){
+  for (let x = 0; x < text.length; x++) {
     text[x].style.filter = "blur(0px)";
   }
-  for(let x= 0 ; x<content.length;x++){
+  for (let x = 0; x < content.length; x++) {
     content[x].style.filter = "blur(0px)";
   }
 
@@ -137,13 +134,13 @@ function blur() {
   const projects = document.querySelectorAll(".Projects");
   const mail = document.getElementById("mail");
   const hero = document.getElementById("home");
-  const text = document.getElementsByClassName('content-text');
-  const content = document.getElementsByClassName('content-container');
+  const text = document.getElementsByClassName("content-text");
+  const content = document.getElementsByClassName("content-container");
 
-  for(let x= 0 ; x<text.length;x++){
+  for (let x = 0; x < text.length; x++) {
     text[x].style.filter = "blur(10px)";
   }
-  for(let x= 0 ; x<content.length;x++){
+  for (let x = 0; x < content.length; x++) {
     content[x].style.filter = "blur(10px)";
   }
   projects.forEach((element) => {
@@ -158,48 +155,84 @@ function blur() {
  */
 
 function getText(id, container) {
-  fetch('details.json')
-  .then(response => {
-
-    if(response.ok){
-       return response.json()
-    }
-    else{
-      return new Error("no data found");
-    }
-  })
-  .then(data=>{
-    container.innerHTML = data[id].info;
-
-  })
-  .catch(error =>{
-    console.log(error);
-  });
+  fetch("details.json")
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        return new Error("no data found");
+      }
+    })
+    .then((data) => {
+      container.innerHTML = data[id].info;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 }
 
-function getImage(id)
-{
-  fetch('details.json').then(response =>{
-    if (response.ok){
-      return response.json();
-    }else{
-      return new Error('sorry no picture');
-    }
-  }).then(data=>{
-    console.log(data[id].picture);
-    return  data[id].picture;
-  })
-  .catch(err=>{
-    console.error(err)
-  });
+function getImage(id) {
+  fetch("details.json")
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        return new Error("sorry no picture");
+      }
+    })
+    .then((data) => {
+      console.log(data[id].picture);
+      return data[id].picture;
+    })
+    .catch((err) => {
+      console.error(err);
+    });
 }
 
-window.addEventListener('scroll',()=>{
-  if(scrollY>50){
-    $('.nav_list').css('box-shadow','1px 1px 3px 1px #333');
-  }else
-  {
-    $('.nav_list').css('box-shadow','none');
+window.addEventListener("scroll", () => {
+  if (scrollY > 50) {
+    $(".nav_list").css("box-shadow", "1px 1px 3px 1px #333");
+  } else {
+    $(".nav_list").css("box-shadow", "none");
   }
-
 });
+
+function showLanguages() {
+  let languages = document.getElementById("nav-language");
+  languages.style.height = "auto";
+  languages.style.top = "0";
+}
+function resetHeight() {
+  let languages = document.getElementById("nav-language");
+  languages.style.height = "15px";
+  languages.style.top = "10px";
+}
+/**
+ * shows an element with infotext
+ *
+ * param="info", class name
+ */
+function showInfo(id) {
+  let info = document.getElementsByClassName("info-box");
+  
+
+  fetch("info.json").then(response => response.json()).then(data=>{
+    console.log(data, data[id]);
+    info[id].innerHTML = data[id].description;
+  });
+  info[id].style.display = "inline";
+  
+  for(let i = 0; i<1; i +=0.1){
+    setTimeout(() => {
+      info[id].style.opacity = i;
+    }, 0.2);
+  }
+  
+}
+
+function hideInfo(id) {
+  let info = document.getElementsByClassName("info-box");
+  
+      info[id].style.opacity = 0;
+      info[id].style.display = "none";
+}

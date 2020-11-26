@@ -1,9 +1,11 @@
 [
     {
+        "id": 0,
         "name": "souschef",
         "description":"second in command of the kitchen"
     },
     {
+        "id": 1,
         "name": "Pforzheim",
         "description":"City in Baden-Württemberg, Germany"
     }

@@ -22,8 +22,16 @@
         <ul class="nav_list">
           <a id="nav-myprojects" href="#home">home</a>
           <a id="nav-myprojects" href="#projects-anchor">projects</a>
-          <a id="nav-myprojects" href="#aboutMe-anchor">about me</a>
+          <a id="nav-myprojects" href="#aboutMe-anchor">who's Jack</a>
           <a href="#mail">mail me</a>
+          <ul
+            id="nav-language"
+            onmouseover="showLanguages()"
+            onmouseout="resetHeight()"
+          >
+            <a id="nav-myprojects" href="Index-de.html">de</a>
+            <a id="nav-myprojects" href="Index-en.html">en</a>
+          </ul>
         </ul>
       </nav>
     </header>
@@ -94,64 +102,84 @@
       <section class="main-content" id="aboutMe">
         <a class="anchor" id="aboutMe-anchor"></a>
         <div class="content-container">
-          <article id="about-me-article">
-            <span class="flex-content">
-              <h1>About me</h1>
-              <p>
-                Back in 2013 I went on a trip arround Australia and ended up
-                traveling for almost four years. I've been to New Zealand, and
-                several countries in South East Asia, including Malaysia,
-                Singapore, Vietnam and the Philippines.
-              </p>
-              <p>
-                Having a background in cheffing, I worked at several Hotels
-                restaurants, cafees and bars not only in Germany but in Australia and new Zealand. Some
-                of the most notable are the
-                <a
-                  href="https://www.goodfood.com.au/cakes-and-ale-sorrento/cakes-and-ale-20151130-473qf"
-                  >Cakes and Ale Sorrento
-                </a>
-                in Victoria, Australia,
-                <a href="https://www.foolsofdesire.co.nz/">Fools of Desire</a>
-                in Rangiora, New Zealand and 
+          <div class="left">
+            <article id="about-me-article">
+              <span class="flex-content">
+                <h1>Wer ist Jack</h1>
+                <p>
+                  Hi, ich bin ein Softwareentwickler und gelernter Koch aus dem
+                  schönen Baden-Württemberg.
+                </p>
+                <p>
+                  Meine Arbeit als Koch hat es mir ermöglicht mehrer Jahre im
+                  Ausland zu verbringen. Erfahrung in großen Hotels und kleinen
+                  cafes und Bars, sowie gehobenen Restaurants zu sammeln.
+                </p>
+                <p>
+                  Einige der für mich am hervorragendsten wären das
+                  <a
+                    href="https://www.goodfood.com.au/cakes-and-ale-sorrento/cakes-and-ale-20151130-473qf"
+                    >Cakes and Ale Sorrento
+                  </a>
+                  in Victoria, Australien, das
+                  <a href="https://www.foolsofdesire.co.nz/">Fools of Desire</a>
+                  in Rangiora, Neu Seeland und
 
-                <a href="https://www.das-goldene-lamm.de/">das Goldene Lamm</a> in Aalen, where I worked
-                as <u class="info" onmouseover="showInfo(souschef)">sous chef</u>.
-              </p>
-              <p>
-                When it comes to work my focal points are economics and process optimization.
-              </p>
-              <p>
-                For the last 9 months I've been writing Software, while working
-                fulltime as a headchef in a
-                <u class="info" onmouseover="showInfo(pforzheim)">Pforzheim</u> Kindergarden.
-              </p>
-              <p>something about software</p>
-            </span>
-          </article>
-          <div class="polaroid">
-            <img
-              src="Media\food\Flammkuchen mit Ziegenkäse Walnuss und Apfel.jpg"
-              alt="tarte flambe with walnuts and goats cheese"
-            />
-            <p>tarte flambe with walnuts and goats cheese</p>
+                  <a href="https://www.das-goldene-lamm.de/"
+                    >das Goldene Lamm</a
+                  >
+                  in Aalen, wo ich als
+                  <u class="info" onmouseover="showInfo(souschef)">sous chef</u>
+                  tätig war.
+                </p>
+                <p>
+                  Bei meiner Arbeit steht die Wirtschaftlichkeit des Betriebs
+                  stehts im Mittelpunkt. Dazu Analysiere ich laufende Prozesse 
+                  und optimiere diese wenn und wo nötig. 
+                </p>
+                <p>
+                  Seit Mai 2019 bin ich Küchenleiter in einer Kita in 
+                  <u class="info" onmouseover="showInfo(pforzheim)"
+                    >Pforzheim</u
+                  > und schreibe seit beginn 2020 aktiv Software. Vorwiegend in C#, aber auch Webanwendungen in JavaScript. 
+                </p>
+                
+                <p>
+                  <h1>Programmiersprachen</h1>
+                  <ul style="list-style:none;">
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Html</li>
+                  </ul>
+                </p>
+              </span>
+            </article>
           </div>
-          <div class="polaroid">
-            <img
-              src="Media\food\Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme.jpg"
-              alt="scallops with grany smith salad with a fennel dressing, pistacio butter and macha icecreame"
-            />
-            <p>
-              scallops with grany smith salad with a fennel dressing, pistacio
-              butter and macha icecreame
-            </p>
-          </div>
-          <div class="polaroid">
-            <img
-              src="Media\food\lachspoke currycustard ginger foam.png"
-              alt="salmon poke on curry custard ginger foam and water cress"
-            />
-            <p>salmon poke on curry custard ginger foam and water cress</p>
+          <div class="right">
+            <div class="polaroid">
+              <img
+                src="Media\food\Flammkuchen mit Ziegenkäse Walnuss und Apfel.jpg"
+                alt="tarte flambe with walnuts and goats cheese"
+              />
+              <p>Flammkuchen mit Apfel, Walnüssen, Honig und Ziegenkäse</p>
+            </div>
+            <div class="polaroid">
+              <img
+                src="Media\food\Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme.jpg"
+                alt="scallops with grany smith salad with a fennel dressing, pistacio butter and macha icecreame"
+              />
+              <p>
+                Jackobs Muscheln mit Pistazienbutter und Salat von Granny-Smith mit Fenchelsamen dressing, dazu Machaeis
+              </p>
+            </div>
+            <div class="polaroid">
+              <img
+                src="Media\food\lachspoke currycustard ginger foam.png"
+                alt="salmon poke on curry custard ginger foam and water cress"
+              />
+              <p>Lachs-Poké auf Currycreme, mit Ingwerschaum und Brunnenkresse</p>
+            </div>
           </div>
         </div>
       </section>
