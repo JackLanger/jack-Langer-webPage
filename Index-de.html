@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
     <link href="../Styles/MainStyle.css" rel="stylesheet" />
@@ -29,8 +29,8 @@
             onmouseover="showLanguages()"
             onmouseout="resetHeight()"
           >
-            <a id="nav-myprojects" href="Index-de.html">de</a>
-            <a id="nav-myprojects" href="Index-en.html">en</a>
+          <a style="cursor: pointer;" id="nav-myprojects" onclick="changeLanguage('de')" >de</a>
+          <a style="cursor: pointer;" id="nav-myprojects" onclick="changeLanguage('en')" >en</a>
           </ul>
         </ul>
       </nav>
@@ -129,7 +129,7 @@
                     >das Goldene Lamm</a
                   >
                   in Aalen, wo ich als
-                  <u class="info" onmouseover="showInfo(souschef)">sous chef</u>
+                  <u class="info" onmouseover="showInfo(0)" onmouseout="hideInfo(0)">sous chef</u><span class="info-box"></span>
                   tätig war.
                 </p>
                 <p>
@@ -139,9 +139,8 @@
                 </p>
                 <p>
                   Seit Mai 2019 bin ich Küchenleiter in einer Kita in 
-                  <u class="info" onmouseover="showInfo(pforzheim)"
-                    >Pforzheim</u
-                  > und schreibe seit beginn 2020 aktiv Software. Vorwiegend in C#, aber auch Webanwendungen in JavaScript. 
+                  <u class="info" onmouseover="showInfo(1)" onmouseout="hideInfo(1)">Pforzheim</u><span class="info-box"></span> 
+                  und schreibe seit beginn 2020 aktiv Software. Vorwiegend in C#, aber auch Webanwendungen in JavaScript. 
                 </p>
                 
                 <p>

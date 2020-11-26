@@ -1,4 +1,5 @@
 var detailsOpen = false;
+var selectedLanguage = document.documentElement.lang;
 
 function showDetails(id, image) {
   console.log(id, image);
@@ -213,15 +214,15 @@ function resetHeight() {
  * param="info", class name
  */
 function showInfo(id) {
-  let info = document.getElementsByClassName("info-box");
   
+  let info = document.getElementsByClassName("info-box");
+    
 
   fetch("info.json").then(response => response.json()).then(data=>{
     console.log(data, data[id]);
     info[id].innerHTML = data[id].description;
   });
   info[id].style.display = "inline";
-  
   for(let i = 0; i<1; i +=0.1){
     setTimeout(() => {
       info[id].style.opacity = i;
@@ -235,4 +236,15 @@ function hideInfo(id) {
   
       info[id].style.opacity = 0;
       info[id].style.display = "none";
+}
+
+
+function changeLanguage(language)
+{
+  if (language === selectedLanguage){
+    return;
+  }
+  else{
+    window.location.href ="index-"+language+".html";
+  }
 }
