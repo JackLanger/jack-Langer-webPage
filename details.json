@@ -1,31 +1,31 @@
 [
   {
     "name": "TaskHub",
-    "info": "<p><strong>TaskHub</strong> is a WPF App to organize existing and comming up Tasks in a visual way, offering options for creating new projects, sorting by project. Adding, deleting and adjusting tasks, using simple <a class='quick-info-link' href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD operations</a><ul><li>Framework: .Net</li><li>Language:C#,SQL</li><li>Pattern: MVVM</li><li>Database: MS-SQL-server</li></ul></p><br><p><a class='details-visit-button' href='#'>visit</a></p>",
+    "info": "<p><strong>TaskHub</strong> is a WPF App to organize existing and comming up Tasks in a visual way, offering options for creating new projects, sorting by project. Adding, deleting and adjusting tasks, using simple <a class='quick-info-link' href='https://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD operations</a><ul><li>Framework: .Net</li><li>Language:C#,SQL</li><li>Pattern: MVVM</li><li>Database: MS-SQL-server</li></ul></p><br><p><a id='details-visit-button' href='#'>view code</a></p>",
     "picture": "TaskHubUi.png",
     "url":"#"
   },
   {
     "name": "Finanzplaner",
-    "info": "<p><h1>Finanzplaner</h1> serves as a tool for calculating the return of small business. It's been written with hospitality in mind but can be applied to any other small business.<ul><li>Framework: .Net</li><li>Langueges: C#</li><li>Pattern: none</li><li>Database: noner</li> </ul></p><br><p><a class='details-visit-button' href='#'>visit</a></p>",
+    "info": "<p><h1>Finanzplaner</h1> serves as a tool for calculating the return of small business. It's been written with hospitality in mind but can be applied to any other small business.<ul><li>Framework: .Net</li><li>Langueges: C#</li><li>Pattern: none</li><li>Database: noner</li> </ul></p><br><p><a id='details-visit-button' href='#'>view code</a></p>",
     "picture": "FinanzplanerUi.png",
     "url":"#"
   },
   {
     "name": "Breakout Brickbreaker",
-    "info": "<p><h1>Breakout Brickbreaker</h1> is single level <a class='quick-info-link' href='https://en.wikipedia.org/wiki/Breakout_clone'>Brickbreaker style</a> game with varying dificulty, providing mouse and keybord controlls as well as a custom scoring system.<ul><li>Framework: ASP.NET</li><li>Langueges: C#</li><li>Pattern: none</li><li>Data: API calls</li></ul></p><br><p><a class='details-visit-button' href='#'>visit</a></p>",
+    "info": "<p><h1>Breakout Brickbreaker</h1> is single level <a class='quick-info-link' href='https://en.wikipedia.org/wiki/Breakout_clone'>Brickbreaker style</a> game with varying dificulty, providing mouse and keybord controlls as well as a custom scoring system.<ul><li>Framework: ASP.NET</li><li>Langueges: C#</li><li>Pattern: none</li><li>Data: API calls</li></ul></p><br><p><a id='details-visit-button' href='#'>view code</a></p>",
     "picture": "Breakout.png",
     "url":"#"
   },
   {
     "name": "Simple Calculator",
-    "info": "<p>A <strong>Calculator</strong> on a <a class='quick-info-link' href='https://en.wikipedia.org/wiki/Windows_Presentation_Foundation'>WPF</a> base that can be extended if need be. Provides basic addition, subtraction, division and multiplication actions as well as square root and PI. <ul><li>Framework: .Net</li><li>Language:C#</li><li>Pattern: none</li><li>Database: noner</li></ul></p><br><p><a class='details-visit-button' href='#'>visit</a></p>",
+    "info": "<p>A <strong>Calculator</strong> on a <a class='quick-info-link' href='https://en.wikipedia.org/wiki/Windows_Presentation_Foundation'>WPF</a> base that can be extended if need be. Provides basic addition, subtraction, division and multiplication actions as well as square root and PI. <ul><li>Framework: .Net</li><li>Language:C#</li><li>Pattern: none</li><li>Database: noner</li></ul></p><br><p><a id='details-visit-button' href='#'>view code</a></p>",
     "picture": "CalculatorUi.png",
     "url":"#"
   },
   {
     "name": "Backpacker World Data",
-    "info": "<p> <h1>BackpackersWorldData</h1> is a Website providing information on countries ranging from population, to exchangerates using Api calls to <a class='quick-info-link' href='https://restcountries.eu/'>Restcountries.eu</a> and <a class='quick-info-link' href='https://exchangeratesapi.io/'> exchangeratesapi.io</a> existing and coming up Tasks in a visual way.<ul><li>Framework: web</li><li>Langueges: HTML5, CSS, JavaScript</li><li>Pattern: none</li><li>Database: none</li></ul></p><br><p><a class='details-visit-button' href='#'>visit</a></p>",
+    "info": "<p> <h1>BackpackersWorldData</h1> is a Website providing information on countries ranging from population, to exchangerates using Api calls to <a class='quick-info-link' href='https://restcountries.eu/'>Restcountries.eu</a> and <a class='quick-info-link' href='https://exchangeratesapi.io/'> exchangeratesapi.io</a> existing and coming up Tasks in a visual way.<ul><li>Framework: web</li><li>Langueges: HTML5, CSS, JavaScript</li><li>Pattern: none</li><li>Database: none</li></ul></p><br><p><a id='details-visit-button' href='#'>view code</a></p>",
     "picture": "WorlddataCountry.png",
     "url":"#"
   }

@@ -21,6 +21,8 @@ function showDetails(id, image) {
   let closerDiv = document.createElement("DIV");
   let closer = document.createElement("p");
   let visitButton = document.createElement("button");
+  let frame = document.createElement("iframe");
+  let viewCode = document.getElementById('details-visit-button');
 
   if (detailsOpen) {
     projectContainer.removeChild(background);
@@ -33,6 +35,7 @@ function showDetails(id, image) {
     background.className = "details-container";
     background.id = "details";
     contentContainer.className = "details-content-container";
+    pictureContainer.className = "details-container-picture";
 
     /*
     create background
@@ -81,19 +84,28 @@ function showDetails(id, image) {
     });
     getText(id, infotextContainer);
 
-    background.style.top = scrollY + 100 + "px";
+    background.style.top = scrollY + 54 + "px";
 
     window.addEventListener("scroll", () => {
       console.log(window.scrollY);
 
-      background.style.top = scrollY + 100 + "px";
+      background.style.top = scrollY + 54 + "px";
     });
 
     background.addEventListener("click", () => {
       console.log("click");
       closeDetails();
     });
+
+    viewCode.addEventListener('click',()=>{
+      frame.src = "https://github.com/JackLanger/TaskHub/blob/master/TaskHub/ViewModels/MainViewModel.cs";
+    });
   }
+}
+
+
+function loadCode(url,frame){
+  frame.href = url;
 }
 
 /**
@@ -262,4 +274,32 @@ function changeLanguage(language)
   else{
     window.location.href ="index-"+language+".html";
   }
+}
+clicked = false;
+
+function showGallery(){
+  console.log(clicked);
+  if(!clicked){
+    let container = document.getElementById('right');
+    let left = document.getElementById('left');
+    let resizer = document.getElementById('resizer');
+    left.style.display = "none";
+    resizer.innerHTML = "hide";
+    
+
+    container.style.width = "95%";
+    clicked = true;
+  }
+  else{
+    resetGallery();
+    clicked = false;
+  }
+}
+function resetGallery(){
+  let container = document.getElementById('right');
+  let left = document.getElementById('left');
+  let resizer = document.getElementById('resizer');
+  left.style.display = "block";
+  container.style.width = "auto";
+  resizer.innerHTML = "show all";
 }
