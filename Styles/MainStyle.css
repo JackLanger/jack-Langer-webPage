@@ -501,6 +501,36 @@ details container
 .info{
   cursor:help;
 } */
+
+/*infoboxes*/
+.tech{
+  width: 150px;
+  height:150px;
+  object-fit: cover;
+}
+.tech-img{
+  width: 150px;
+  height: 150px;
+}
+#sql{
+  transform: scale(.9);
+}
+#htmlImg{
+  position: relative;
+  top:10px;
+  transform: scale(.8);
+}
+#closer{
+  position: relative;
+  font-size: var(--fontheader-size);
+  cursor: pointer;
+  color: #ccc;
+  margin-left: auto;
+  text-align: right;
+  width: 50px;
+  right: 5vw;
+}
+
 /*media querys*/
 @media only screen and (max-width:480px){
   article{
@@ -529,4 +559,3 @@ details container
     height: 736px;
   }
 }
-/*infoboxes*/

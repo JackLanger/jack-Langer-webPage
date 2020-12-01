@@ -49,20 +49,13 @@ function showDetails(id, image) {
      */
 
     closer.innerHTML = "X";
+    closer.id = "closer";
     background.appendChild(closerDiv);
     background.appendChild(contentContainer);
     contentContainer.appendChild(pictureContainer);
     contentContainer.appendChild(infotextContainer);
     closerDiv.appendChild(closer);
 
-    closer.style.flexGrow = 1;
-    closer.style.marginLeft = "auto";
-    closer.style.fontSize = "25px";
-    closer.style.cursor = "pointer";
-    closer.style.width = "20px";
-    closer.style.marginRight = "5px";
-    closerDiv.style.height = "70px";
-    closer.style.color = "#ccc";
 
     let html = "<img class='details-image' src = '" + image + "'/>";
 
@@ -91,10 +84,10 @@ function showDetails(id, image) {
       background.style.top = scrollY + 54 + "px";
     });
 
-    background.addEventListener("click", () => {
-      console.log("click");
-      closeDetails();
-    });
+    // background.addEventListener("click", () => {
+    //   console.log("click");
+    //   closeDetails();
+    // });
 
     viewCode.addEventListener("click", () => {
       frame.src =
