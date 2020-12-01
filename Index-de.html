@@ -7,6 +7,7 @@
     <script src="../Scripts/projectsAnimation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../Scripts\forms.js"></script>
+    <script src="../Scripts\gallery.js"></script>
   </head>
 
   <body>
@@ -129,7 +130,7 @@
                     >das Goldene Lamm</a
                   >
                   in Aalen, wo ich als
-                  <u class="info" onmouseover="showInfo(0)" onmouseout="hideInfo(0)">sous chef</u><span class="info-box"></span>
+                  <u class="info" >sous chef</u>
                   tätig war.
                 </p>
                 <p>
@@ -139,47 +140,15 @@
                 </p>
                 <p>
                   Seit Mai 2019 bin ich Küchenleiter in einer Kita in 
-                  <u class="info" onmouseover="showInfo(1)" onmouseout="hideInfo(1)">Pforzheim</u><span class="info-box"></span> 
+                  <u class="info">Pforzheim</u> 
                   und schreibe seit beginn 2020 aktiv Software. Vorwiegend in C#, aber auch Webanwendungen in JavaScript. 
                 </p>
                 
-                <p>
-                  <h1>Programmiersprachen</h1>
-                  <ul style="list-style:none;">
-                    <li>C#</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                    <li>Html</li>
-                  </ul>
-                </p>
               </span>
             </article>
           </div>
           <div id="right">
-          <!-- <div id="resizer" onclick="showGallery()">show all</div> -->
-            <div class="polaroid">
-              <img
-                src="Media\food\Flammkuchen mit Ziegenkäse Walnuss und Apfel.jpg"
-                alt="tarte flambe with walnuts and goats cheese"
-              />
-              <p>Flammkuchen mit Apfel, Walnüssen, Honig und Ziegenkäse</p>
-            </div>
-            <div class="polaroid">
-              <img
-                src="Media\food\Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme.jpg"
-                alt="scallops with grany smith salad with a fennel dressing, pistacio butter and macha icecreame"
-              />
-              <p>
-                Jackobs Muscheln mit Pistazienbutter und Salat von Granny-Smith mit Fenchelsamen dressing, dazu Machaeis
-              </p>
-            </div>
-            <div class="polaroid">
-              <img
-                src="Media\food\lachspoke currycustard ginger foam.png"
-                alt="salmon poke on curry custard ginger foam and water cress"
-              />
-              <p>Lachs-Poké auf Currycreme, mit Ingwerschaum und Brunnenkresse</p>
-            </div>
+            <div style="left: -55px;" id="resizer" onclick="resizeGallery(50)">alle ansehen</div>
           </div>
         </div>
       </section>

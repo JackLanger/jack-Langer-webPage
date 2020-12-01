@@ -1,12 +1,11 @@
 var detailsOpen = false;
 var selectedLanguage = document.documentElement.lang;
 
-
- /**
-  * build an overlay box to display
-  * @param {int} id 
-  * @param {string} image 
-  */
+/**
+ * build an overlay box to display
+ * @param {int} id
+ * @param {string} image
+ */
 function showDetails(id, image) {
   console.log(id, image);
   const projects = document.querySelectorAll(".Projects");
@@ -22,7 +21,7 @@ function showDetails(id, image) {
   let closer = document.createElement("p");
   let visitButton = document.createElement("button");
   let frame = document.createElement("iframe");
-  let viewCode = document.getElementById('details-visit-button');
+  let viewCode = document.getElementById("details-visit-button");
 
   if (detailsOpen) {
     projectContainer.removeChild(background);
@@ -97,15 +96,11 @@ function showDetails(id, image) {
       closeDetails();
     });
 
-    viewCode.addEventListener('click',()=>{
-      frame.src = "https://github.com/JackLanger/TaskHub/blob/master/TaskHub/ViewModels/MainViewModel.cs";
+    viewCode.addEventListener("click", () => {
+      frame.src =
+        "https://github.com/JackLanger/TaskHub/blob/master/TaskHub/ViewModels/MainViewModel.cs";
     });
   }
-}
-
-
-function loadCode(url,frame){
-  frame.href = url;
 }
 
 /**
@@ -234,72 +229,79 @@ function resetHeight() {
  * @param {int} id
  */
 function showInfo(id) {
-  
   let info = document.getElementsByClassName("info-box");
-    
 
-  fetch("info.json").then(response => response.json()).then(data=>{
-    console.log(data, data[id]);
-    info[id].innerHTML = data[id].description;
-  });
+  fetch("info.json")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data, data[id]);
+      info[id].innerHTML = data[id].description;
+    });
   info[id].style.display = "inline";
-  for(let i = 0; i<1; i +=0.1){
+  for (let i = 0; i < 1; i += 0.1) {
     setTimeout(() => {
       info[id].style.opacity = i;
-    }, 0.2);
+    }, 0);
   }
-  
 }
 /**
  * hide the text for the element with the id
- * @param {int} id 
+ * @param {int} id
  */
 function hideInfo(id) {
   let info = document.getElementsByClassName("info-box");
-  
-      info[id].style.opacity = 0;
-      info[id].style.display = "none";
+
+  info[id].style.opacity = 0;
+  info[id].style.display = "none";
 }
 
 /**
- * select the langage 
- * @param {string} language 
+ * select the langage
+ * @param {string} language
  */
 
-function changeLanguage(language)
-{
-  if (language === selectedLanguage){
+function changeLanguage(language) {
+  if (language === selectedLanguage) {
     return;
-  }
-  else{
-    window.location.href ="index-"+language+".html";
+  } else {
+    window.location.href = "index-" + language + ".html";
   }
 }
-clicked = false;
 
-function showGallery(){
-  console.log(clicked);
-  if(!clicked){
-    let container = document.getElementById('right');
-    let left = document.getElementById('left');
-    let resizer = document.getElementById('resizer');
-    left.style.display = "none";
-    resizer.innerHTML = "hide";
+function resizeGallery(size) {
+  
+  var left = document.getElementById("left");
+  var right = document.getElementById("right");
+  let img = document.querySelector(".polaroid");
+
+  right.style.transitionDelay = "0.2s";
+  left.style.transition = "1s";
+  right.style.transition = "1s";
+  
+  
+  if (!gallaryScaled) {
+    gallaryScaled = true;
+    left.style.width ="30%";
+    setTimeout(() => {
+      
+      right.style.maxWidth = "95%";
+      right.style.width = "50%";
+    }, 100);
     
 
-    container.style.width = "95%";
-    clicked = true;
-  }
-  else{
+    right.style.overflowY="scroll";
+
+  } else {
     resetGallery();
-    clicked = false;
   }
 }
+
 function resetGallery(){
-  let container = document.getElementById('right');
-  let left = document.getElementById('left');
-  let resizer = document.getElementById('resizer');
-  left.style.display = "block";
-  container.style.width = "auto";
-  resizer.innerHTML = "show all";
+
+  gallaryScaled = false;
+  right.style.width = "auto";
+  right.style.maxWidth = "35ch";
+  left.style.width = "50%";
+  right.style.overflow="hidden";
 }
+gallaryScaled = false;
