@@ -272,8 +272,8 @@ function resizeGallery(size) {
   right.style.transition = "1s";
   
   
-  if (!gallaryScaled) {
-    gallaryScaled = true;
+  if (!galleryScaled) {
+    galleryScaled = true;
     left.style.width ="30%";
     setTimeout(() => {
       
@@ -291,12 +291,12 @@ function resizeGallery(size) {
 
 function resetGallery(){
 
-  gallaryScaled = false;
+  galleryScaled = false;
   right.style.width = "auto";
   right.style.maxWidth = "35ch";
   left.style.width = "50%";
   right.style.overflow="hidden";
 }
-gallaryScaled = false;
+galleryScaled = false;
 
 
