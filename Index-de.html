@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <link href="../Styles/MainStyle.css" rel="stylesheet" />
     <title>Jack Langer Home</title>
-    <script src="../Scripts/projectsAnimation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../Scripts\forms.js"></script>
-    <script src="../Scripts\procedural.js"></script>
   </head>
 
   <body>
@@ -30,8 +27,18 @@
             onmouseover="showLanguages()"
             onmouseout="resetHeight()"
           >
-          <a style="cursor: pointer;" id="nav-myprojects" onclick="changeLanguage('de')" >de</a>
-          <a style="cursor: pointer;" id="nav-myprojects" onclick="changeLanguage('en')" >en</a>
+            <a
+              style="cursor: pointer"
+              id="nav-myprojects"
+              onclick="changeLanguage('de')"
+              >de</a
+            >
+            <a
+              style="cursor: pointer"
+              id="nav-myprojects"
+              onclick="changeLanguage('en')"
+              >en</a
+            >
           </ul>
         </ul>
       </nav>
@@ -130,25 +137,27 @@
                     >das Goldene Lamm</a
                   >
                   in Aalen, wo ich als
-                  <u class="info" >sous chef</u>
+                  <u class="info">sous chef</u>
                   tätig war.
                 </p>
                 <p>
                   Bei meiner Arbeit steht die Wirtschaftlichkeit des Betriebs
-                  stehts im Mittelpunkt. Dazu Analysiere ich laufende Prozesse 
-                  und optimiere diese wenn und wo nötig. 
+                  stehts im Mittelpunkt. Dazu Analysiere ich laufende Prozesse
+                  und optimiere diese wenn und wo nötig.
                 </p>
                 <p>
-                  Seit Mai 2019 bin ich Küchenleiter in einer Kita in 
-                  <u class="info">Pforzheim</u> 
-                  und schreibe seit beginn 2020 aktiv Software. Vorwiegend in C#, aber auch Webanwendungen in JavaScript. 
+                  Seit Mai 2019 bin ich Küchenleiter in einer Kita in
+                  <u class="info">Pforzheim</u>
+                  und schreibe seit beginn 2020 aktiv Software. Vorwiegend in
+                  C#, aber auch Webanwendungen in JavaScript.
                 </p>
-                
               </span>
             </article>
           </div>
           <div id="right">
-            <div style="left: -55px;" id="resizer" onclick="resizeGallery(50)">alle ansehen</div>
+            <div style="left: -55px" id="resizer" onclick="resizeGallery(50)">
+              alle ansehen
+            </div>
           </div>
         </div>
       </section>
@@ -204,6 +213,10 @@
       </div>
     </footer>
   </body>
+
+  <script src="../Scripts/projectsAnimation.js"></script>
+  <script src="../Scripts\forms.js"></script>
+  <script src="../Scripts\procedural.js"></script>
 </html>
 
 <!-- <form

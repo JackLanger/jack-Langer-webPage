@@ -298,3 +298,5 @@ function resetGallery(){
   right.style.overflow="hidden";
 }
 gallaryScaled = false;
+
+

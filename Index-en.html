@@ -4,10 +4,8 @@
     <meta charset="utf-8" />
     <link href="../Styles/MainStyle.css" rel="stylesheet" />
     <title>Jack Langer Home</title>
-    <script src="../Scripts/projectsAnimation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../Scripts\forms.js"></script>
-    <script src="../Scripts\procedural.js"></script>
+  
   </head>
 
   <body>
@@ -25,10 +23,24 @@
           <a id="nav-myprojects" href="#projects-anchor">projects</a>
           <a id="nav-myprojects" href="#aboutMe-anchor">who's Jack</a>
           <a href="#mail">mail me</a>
-            <ul id="nav-language" onmouseover="showLanguages()" onmouseout="resetHeight()">
-              <a style="cursor: pointer;" id="nav-myprojects" onclick="changeLanguage('en')" >en</a>
-              <a style="cursor: pointer;" id="nav-myprojects" onclick="changeLanguage('de')" >de</a>
-            </ul>
+          <ul
+            id="nav-language"
+            onmouseover="showLanguages()"
+            onmouseout="resetHeight()"
+          >
+            <a
+              style="cursor: pointer"
+              id="nav-myprojects"
+              onclick="changeLanguage('en')"
+              >en</a
+            >
+            <a
+              style="cursor: pointer"
+              id="nav-myprojects"
+              onclick="changeLanguage('de')"
+              >de</a
+            >
+          </ul>
         </ul>
       </nav>
     </header>
@@ -97,14 +109,27 @@
         </div>
       </section>
 
-      <section style="display: flex; padding: 15px 0px;">
+      <section style="display: flex; padding: 15px 0px">
         <div class="tech">
-          <img class="tech-img" src="Media\icons\css.png" alt="CSS">
+          <img class="tech-img" src="Media\icons\css.png" alt="CSS" />
         </div>
-        <div class="tech"><img id="htmlImg" class="tech-img" src="Media\icons\html.png" alt="HTML5"></div>
-        <div class="tech"><img class="tech-img" src="Media\icons\js.png" alt="JavaScript"></div>
-        <div class="tech"><img class="tech-img" src="Media\icons\cs.png" alt="C#"></div>
-        <div class="tech"><img id="sql" class="tech-img" src="Media\icons\sql.png" alt="SQL"></div>
+        <div class="tech">
+          <img
+            id="htmlImg"
+            class="tech-img"
+            src="Media\icons\html.png"
+            alt="HTML5"
+          />
+        </div>
+        <div class="tech">
+          <img class="tech-img" src="Media\icons\js.png" alt="JavaScript" />
+        </div>
+        <div class="tech">
+          <img class="tech-img" src="Media\icons\cs.png" alt="C#" />
+        </div>
+        <div class="tech">
+          <img id="sql" class="tech-img" src="Media\icons\sql.png" alt="SQL" />
+        </div>
       </section>
 
       <section class="main-content" id="aboutMe">
@@ -115,38 +140,46 @@
               <span class="flex-content">
                 <h1>About me</h1>
                 <p>
-                  I'm a Software developer and chef with a love for computers and travelling.
+                  I'm a Software developer and chef with a love for computers
+                  and travelling.
                 </p>
                 <p>
-                  Having a background in cheffing, I worked at several big Hotels, finedine
-                  restaurants, and relaxed cafees and busy bars.
+                  Having a background in cheffing, I worked at several big
+                  Hotels, finedine restaurants, and relaxed cafees and busy
+                  bars.
                 </p>
-                <p> The most notable would be the
+                <p>
+                  The most notable would be the
                   <a
                     href="https://www.goodfood.com.au/cakes-and-ale-sorrento/cakes-and-ale-20151130-473qf"
                     >Cakes and Ale Sorrento
                   </a>
                   in Victoria, Australia,
                   <a href="https://www.foolsofdesire.co.nz/">Fools of Desire</a>
-                  in Rangiora, New Zealand and 
-  
-                  <a href="https://www.das-goldene-lamm.de/">das Goldene Lamm</a> in Aalen, where I worked
-                  as <u class="info" >sous chef</u>.
+                  in Rangiora, New Zealand and
+
+                  <a href="https://www.das-goldene-lamm.de/"
+                    >das Goldene Lamm</a
+                  >
+                  in Aalen, where I worked as <u class="info">sous chef</u>.
                 </p>
                 <p>
-                  When it comes to work my focal points are economics and process optimization.
+                  When it comes to work my focal points are economics and
+                  process optimization.
                 </p>
                 <p>
-                  Since early 2020 I'm writing software, while working
-                  fulltime as a headchef in a
-                  <u class="info" >Pforzheim</u> Kindergarden.
+                  Since early 2020 I'm writing software, while working fulltime
+                  as a headchef in a
+                  <u class="info">Pforzheim</u> Kindergarden.
                 </p>
               </span>
             </article>
+          </div>
+          <div id="right">
+            <div class="resizeableDiv" id="resizer" onclick="resizeGallery(50)" >
+              resize
             </div>
-            <div id="right">
-              <div id="resizer" onclick="resizeGallery(50)">resize</div>
-            </div>          
+          </div>
         </div>
       </section>
     </article>
@@ -201,6 +234,10 @@
       </div>
     </footer>
   </body>
+  <script src="../Scripts/projectsAnimation.js"></script>
+  <script src="../Scripts\forms.js"></script>
+  <script src="../Scripts\procedural.js"></script>
+  <script src="../Scripts\resize.js"></script>
 </html>
 
 <!-- <form

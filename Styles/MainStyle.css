@@ -1,12 +1,12 @@
 ﻿:root {
   --FontHeader: Merriweather, "Times New Roman", Times, serif;
-  --fontheader-size:40px;
+  --fontheader-size: 40px;
   --FontContent: InterLight, Arial, Helvetica, sans-serif;
   --fontcontent-size: 18px;
   --imgFont-size: 10px;
-  --LinkColor:rgba(115, 135, 188, 1);
-  --LinkColorVisited:rgba(233, 133, 197, 1);
-  --FontHeaderDetails-Size:25px;
+  --LinkColor: rgba(115, 135, 188, 1);
+  --LinkColorVisited: rgba(233, 133, 197, 1);
+  --FontHeaderDetails-Size: 25px;
 }
 html {
   scroll-behavior: smooth;
@@ -24,17 +24,17 @@ p {
   text-align: justify;
   z-index: 0;
 }
-h1{
+h1 {
   font-size: var(--fontheader-size);
   font-family: var(--FontHeader);
 }
-a{
+a {
   color: #555;
   font-weight: 600;
   color: var(--LinkColor);
   text-decoration: none;
 }
-a:visited{
+a:visited {
   color: var(--LinkColorVisited);
 }
 header {
@@ -53,7 +53,7 @@ header {
   display: flex;
   list-style: none;
   background: #ddd;
-  transition: .3s;
+  transition: 0.3s;
 }
 .nav_list a:nth-child(1) {
   margin-left: auto;
@@ -62,13 +62,12 @@ header {
   color: rgba(115, 135, 188, 1);
   margin-left: auto;
 }
-.nav_list a:nth-child(5){
+.nav_list a:nth-child(5) {
   color: rgba(233, 133, 197, 1);
-
 }
-.nav_list a:nth-child(5):hover{
+.nav_list a:nth-child(5):hover {
   background-color: #ddd;
-  color:rgba(115, 135, 188, 1);
+  color: rgba(115, 135, 188, 1);
 }
 .nav_list a {
   position: relative;
@@ -86,7 +85,7 @@ header {
   position: absolute;
   transform: translateY(-20vh);
 }
-#nav-language{
+#nav-language {
   position: relative;
   padding: 5px;
   margin: 0;
@@ -94,20 +93,20 @@ header {
   width: 50px;
   height: 15px;
   top: 11px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-#nav-language a{
+#nav-language a {
   background-color: transparent;
   color: rgba(233, 133, 197, 1);
 }
-#nav-language a:hover{
+#nav-language a:hover {
   background-color: transparent;
-  color:rgba(115, 135, 188, 1);
+  color: rgba(115, 135, 188, 1);
 }
-#nav-language a{
+#nav-language a {
   padding: 5px;
-  margin:5px;
+  margin: 5px;
 }
 /* 
 hero picture and text 
@@ -173,8 +172,7 @@ section {
   font-size: 11px;
   z-index: 1;
 }
-.polaroid p{
-
+.polaroid p {
   font-size: var(--imgFont-size);
 }
 /* 
@@ -184,7 +182,7 @@ Main content
   width: 100%;
   margin: auto;
 }
-.content-text h1{
+.content-text h1 {
   font-family: var(--FontHeader);
   font-size: var(--fontheader-size);
   text-align: center;
@@ -197,7 +195,7 @@ Main content
   flex-flow: wrap row;
 }
 
-#left{
+#left {
   width: 50%;
   padding: 0;
   text-align: justify;
@@ -205,15 +203,15 @@ Main content
   margin-right: auto;
   overflow: hidden;
 }
-#left span{
+#left span {
   position: relative;
   margin-left: auto;
   display: inline-block;
 }
-#right{
+#right {
   position: relative;
   float: right;
-  max-width:35vw;
+  max-width: 35vw;
   height: 110vh;
   background-color: #fff;
   margin-right: auto;
@@ -223,12 +221,12 @@ Main content
   display: flex;
   flex-flow: column wrap;
   overflow: hidden;
-  
+  /* right:2vw; */
 }
-#right >*{
-margin:10px;
+#right > * {
+  margin: 10px;
 }
-#resizer{
+#resizer {
   position: absolute;
   top: 50%;
   transform: rotate(90deg);
@@ -323,7 +321,7 @@ footer {
   padding: 25px;
   text-align: center;
 }
-footer p{
+footer p {
   font-size: 14px;
 }
 .footer-content {
@@ -439,7 +437,7 @@ details container
   z-index: 5;
   overflow: hidden;
 }
-.details-container-picture{
+.details-container-picture {
   padding: 0%;
   margin: 0%;
   grid-row: 0;
@@ -480,10 +478,10 @@ details container
 .details-text ul {
   list-style-type: none;
 }
-.details-text h1{
+.details-text h1 {
   font-size: var(--FontHeaderDetails-Size);
 }
-.details-visit-button{
+.details-visit-button {
   border: none;
   padding-bottom: 2px;
   background-color: transparent;
@@ -494,7 +492,7 @@ details container
   font-family: var(--FontContent);
   cursor: pointer;
 }
-.details-visit-button:hover{
+.details-visit-button:hover {
   border-bottom: #aaf solid 1px;
 }
 /* 
@@ -503,24 +501,24 @@ details container
 } */
 
 /*infoboxes*/
-.tech{
+.tech {
   width: 150px;
-  height:150px;
+  height: 150px;
   object-fit: cover;
 }
-.tech-img{
+.tech-img {
   width: 150px;
   height: 150px;
 }
-#sql{
-  transform: scale(.9);
+#sql {
+  transform: scale(0.9);
 }
-#htmlImg{
+#htmlImg {
   position: relative;
-  top:10px;
-  transform: scale(.8);
+  top: 10px;
+  transform: scale(0.8);
 }
-#closer{
+#closer {
   position: relative;
   font-size: var(--fontheader-size);
   cursor: pointer;
@@ -532,19 +530,19 @@ details container
 }
 
 /*media querys*/
-@media only screen and (max-width:480px){
-  article{
+@media only screen and (max-width: 480px) {
+  article {
     width: 100%;
   }
-  p{
+  p {
     padding: 20px;
   }
-  #mail{
+  #mail {
     max-width: 400px;
     text-align: center;
     margin: auto;
   }
-  .contact-textarea{
+  .contact-textarea {
     max-width: 400px;
     margin: auto;
   }
@@ -555,7 +553,7 @@ details container
     margin: auto;
     padding: 10px;
   }
-  .Hero-Landing{
+  .Hero-Landing {
     height: 736px;
   }
 }
