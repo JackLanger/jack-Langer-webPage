@@ -1,14 +1,19 @@
+/**
+ * on click resize the gallery, while mouse button held down resize by drag and drop
+ */
+
 const el = document.querySelector("#resizer");
 var mouseIsDown = false;
+var galleryScaled = false;
 
 el.addEventListener("mousedown", (e) => {
   const right = document.querySelector("#right");
 
   e.preventDefault();
   window.addEventListener("mouseup", mouseup);
-  
+
   mouseIsDown = true;
-  
+
   setTimeout(() => {
     console.log("slept");
     if (mouseIsDown) {
@@ -17,6 +22,13 @@ el.addEventListener("mousedown", (e) => {
     } else {
       console.log("mouse was clicked");
       //resizeGallery(50);
+      if (!galleryScaled) {
+        right.style.width = "35vw";
+        galleryScaled = true;
+      } else {
+        right.style.width = "50px";
+        galleryScaled = false;
+      }
     }
   }, 100);
 
@@ -40,43 +52,3 @@ el.addEventListener("mousedown", (e) => {
     mouseIsDown = false;
   }
 });
-
-
-
-function resizeGallery(size) {
-  
-  var left = document.getElementById("left");
-  var right = document.getElementById("right");
-  let img = document.querySelector(".polaroid");
-
-  right.style.transitionDelay = "0.2s";
-  left.style.transition = "1s";
-  right.style.transition = "1s";
-  
-  
-  if (!galleryScaled) {
-    galleryScaled = true;
-    left.style.width ="30%";
-    setTimeout(() => {
-      
-      right.style.maxWidth = "95%";
-      right.style.width = "50%";
-    }, 100);
-    
-
-    right.style.overflowY="scroll";
-
-  } else {
-    resetGallery();
-  }
-}
-
-function resetGallery(){
-
-  galleryScaled = false;
-  right.style.width = "auto";
-  right.style.maxWidth = "35ch";
-  left.style.width = "50%";
-  right.style.overflow="hidden";
-}
-galleryScaled = false;
