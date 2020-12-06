@@ -89,10 +89,12 @@ function showDetails(id, image) {
     //   closeDetails();
     // });
 
-    viewCode.addEventListener("click", () => {
-      frame.src =
-        "https://github.com/JackLanger/TaskHub/blob/master/TaskHub/ViewModels/MainViewModel.cs";
-    });
+    viewCode.addEventListener("click", loadGithubScript);
+
+    function loadGithubScript()
+    {
+      frame.src ="http://gist-it.appspot.com/https://github.com/JackLanger/TaskHub/blob/master/TaskHub/ViewModels/MainViewModel.cs";
+    }
   }
 }
 
@@ -261,42 +263,6 @@ function changeLanguage(language) {
   }
 }
 
-function resizeGallery(size) {
-  
-  var left = document.getElementById("left");
-  var right = document.getElementById("right");
-  let img = document.querySelector(".polaroid");
 
-  right.style.transitionDelay = "0.2s";
-  left.style.transition = "1s";
-  right.style.transition = "1s";
-  
-  
-  if (!galleryScaled) {
-    galleryScaled = true;
-    left.style.width ="30%";
-    setTimeout(() => {
-      
-      right.style.maxWidth = "95%";
-      right.style.width = "50%";
-    }, 100);
-    
-
-    right.style.overflowY="scroll";
-
-  } else {
-    resetGallery();
-  }
-}
-
-function resetGallery(){
-
-  galleryScaled = false;
-  right.style.width = "auto";
-  right.style.maxWidth = "35ch";
-  left.style.width = "50%";
-  right.style.overflow="hidden";
-}
-galleryScaled = false;
 
 

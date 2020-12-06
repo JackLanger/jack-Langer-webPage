@@ -211,6 +211,7 @@ Main content
 #right {
   position: relative;
   float: right;
+  width:50px;
   max-width: 35vw;
   height: 110vh;
   background-color: #fff;
@@ -235,7 +236,7 @@ Main content
   background-color: #aaa;
   border-radius: 3px;
   z-index: 0;
-  cursor: pointer;
+  cursor: ew-resize;
 }
 /* 
 email Form 
