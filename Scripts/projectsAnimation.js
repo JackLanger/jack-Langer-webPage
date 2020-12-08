@@ -20,7 +20,6 @@ function showDetails(id, image) {
   let closerDiv = document.createElement("DIV");
   let closer = document.createElement("p");
   let visitButton = document.createElement("button");
-  let frame = document.createElement("iframe");
   let viewCode = document.getElementById("details-visit-button");
 
   if (detailsOpen) {
@@ -90,11 +89,6 @@ function showDetails(id, image) {
     // });
 
     viewCode.addEventListener("click", loadGithubScript);
-
-    function loadGithubScript()
-    {
-      frame.src ="http://gist-it.appspot.com/https://github.com/JackLanger/TaskHub/blob/master/TaskHub/ViewModels/MainViewModel.cs";
-    }
   }
 }
 
@@ -262,7 +256,4 @@ function changeLanguage(language) {
     window.location.href = "index-" + language + ".html";
   }
 }
-
-
-
 

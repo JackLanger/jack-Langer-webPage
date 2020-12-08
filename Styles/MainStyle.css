@@ -211,7 +211,7 @@ Main content
 #right {
   position: relative;
   float: right;
-  width:50px;
+  width:280px;
   max-width: 35vw;
   height: 110vh;
   background-color: #fff;
@@ -532,6 +532,28 @@ details container
   text-align: right;
   width: 50px;
   right: 5vw;
+}
+
+#code-sample{
+  padding:25px;
+  min-height: 40px;
+}
+#git-script{
+  border:1px #fff;
+}
+#view-code-button{
+  border: none;
+  background-color: transparent;
+  font-size: var(--FontHeaderDetails-Size);
+  color: var(--LinkColor);
+}
+#script-container{
+  max-height: 500px;
+  width: 100%;
+}
+#view-code-button:hover{
+  cursor: pointer;
+  color: var(--LinkColorVisited);
 }
 
 /*media querys*/

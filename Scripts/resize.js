@@ -33,7 +33,7 @@ el.addEventListener("mousedown", (e) => {
   }, 100);
 
   /**
-   * calculate the difference between mouse position and the rectangle right offset to the width.
+   * calculate the difference between mouse position and the rectangle right offset and add to width.
    * @param {event} e
    */
   function mousemove(e) {
