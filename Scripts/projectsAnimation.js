@@ -82,13 +82,6 @@ function showDetails(id, image) {
 
       background.style.top = scrollY + 54 + "px";
     });
-
-    // background.addEventListener("click", () => {
-    //   console.log("click");
-    //   closeDetails();
-    // });
-
-    viewCode.addEventListener("click", loadGithubScript);
   }
 }
 
@@ -255,5 +248,24 @@ function changeLanguage(language) {
   } else {
     window.location.href = "index-" + language + ".html";
   }
+}
+
+function showCode(index){
+
+  
+  let container = document.querySelector('#code-sample');
+  let script = document.querySelector('#git-Script');
+
+  script.src = "";
+
+  fetch("gitSource.json")
+  .then(response => response.json())
+  .then(data =>{
+    script.src = "http://gist-it.appspot.com/"+data[index].url;
+    container.style.height="60vh";
+    document.getElementById('script-container').style.display="block";
+
+    console.log(script.src);
+  });
 }
 

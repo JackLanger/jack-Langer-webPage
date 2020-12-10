@@ -1,0 +1,42 @@
+[
+    {
+        "titel":"Devils Marbels",
+        "url":"Media\\travel\\DevilsMarbels.JPG",
+        "de": "Devils Marbels, Australien",
+        "en": "Devils Marbels, Australia"
+    },
+    {
+        "titel":"Mt. Taranaki",
+        "url":"Media\\travel\\Mt. Taranaki.JPG",
+        "de": "Mt. Taranaki, Neu Seeland",
+        "en": "Mt. Taranaki, New Zealand"
+    },
+
+    {
+        "titel":"Stuart Island",
+        "url":"Media\\travel\\Stuart Island.JPG",
+        "de": "Lachspoke Currycreme Ingwerschaum",
+        "en": "Staurt Island, New Zealand"
+    },
+
+    {
+        "titel":"Flammkuchen mit Ziegenkäse Walnuss und Apfel",
+        "url":"Media\\food\\Flammkuchen mit Ziegenkäse Walnuss und Apfel.jpg",
+        "de": "Flammkuchen mit Ziegenkäse Walnuss und Apfel",
+        "en": "Tarte flambee, with goatscheese, walnuts and apples"
+    },
+
+    {
+        "titel":"Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme",
+        "url":"Media\\food\\Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme.jpg",
+        "de": "Jakobsmuscheln mit Pistazienbutter, Petersilie , Grannysmith Fenchelsamen Salat und Machaeiscreme",
+        "en": "Scallops on pistacio butter, Grannysmith fennel salat and Macha icecreame"
+    },
+
+    {
+        "titel":"Lachspoke currycustard Ingwerschaum",
+        "url":"Media\\food\\lachspoke currycustard ginger foam.png",
+        "de": "Lachspoke Currycreme Ingwerschaum",
+        "en": "Salmonpoké on curry custurd and ginger foam"
+    }
+]
