@@ -55,7 +55,6 @@ function showDetails(id, image) {
     contentContainer.appendChild(infotextContainer);
     closerDiv.appendChild(closer);
 
-
     let html = "<img class='details-image' src = '" + image + "'/>";
 
     pictureContainer.innerHTML = html;
@@ -250,22 +249,20 @@ function changeLanguage(language) {
   }
 }
 
-function showCode(index){
+function showCode(index) {
+  let container = document.querySelectorAll(".script-container");
+  if (index <0) {
+    console.log("hide");
+    for (let i = 0; i < container.length; i++) {
+      container[i].style.display = "none";
+    }
+    return;
+  } else {
 
-  
-  let container = document.querySelector('#code-sample');
-  let script = document.querySelector('#git-Script');
+    for (let i = 0; i < container.length; i++) {
+      container[i].style.display = "none";
+    }
 
-  script.src = "";
-
-  fetch("gitSource.json")
-  .then(response => response.json())
-  .then(data =>{
-    script.src = "http://gist-it.appspot.com/"+data[index].url;
-    container.style.height="60vh";
-    document.getElementById('script-container').style.display="block";
-
-    console.log(script.src);
-  });
+    container[index].style.display = "block";
+  }
 }
-

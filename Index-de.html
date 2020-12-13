@@ -21,6 +21,7 @@
           <a id="nav-myprojects" href="#home">home</a>
           <a id="nav-myprojects" href="#projects-anchor">projects</a>
           <a id="nav-myprojects" href="#aboutMe-anchor">who's Jack</a>
+          <a id="nav-myprojects" href="#aboutMe-anchor">Lebenslauf</a>
           <a href="#mail">mail me</a>
           <ul
             id="nav-language"
@@ -107,10 +108,22 @@
           <p>Backpackers World Data</p>
         </div>
       </section>
-
+      <!-- code script -->
       <section id="code-sample">
-        <div id=script-container>
-          <script id="git-Script"></script>
+        <h1 id="code-button"> Arbeits Beispiele
+          <ul>
+            <li onclick="showCode(0)">TaskHub(C#)</li>
+            <li onclick="showCode(1)">Backpackers World Data(JS)</li>
+            <li onclick="showCode(-1)">hide all</li>
+          </ul>
+        </h1>
+        <div class="script-container" id="TaskHub-script-container">
+          <h3>TaskHub MainViewModel</h3>
+          <script id="git-Script" src="http://gist-it.appspot.com/https://github.com/JackLanger/TaskHub/blob/master/TaskHub/ViewModels/MainViewModel.cs"></script>
+        </div>
+        <div class="script-container" id="BackpackersWorldData-script-container">
+          <h3>BackpackersWorldData JSDAL.js</h3>
+          <script id="git-Script" src="http://gist-it.appspot.com/https://github.com/JackLanger/BackpackersWorldData/blob/master/SoloLearn-CSCorner/JS/JSDAL.js"></script>
         </div>
       </section>
 
