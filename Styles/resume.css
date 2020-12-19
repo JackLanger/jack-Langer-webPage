@@ -1,0 +1,103 @@
+:root{
+  --pointOfInterestSize:18px;
+  --DateFont:13px;
+  --smallFont:12px;
+  --lightWeight:200;
+  --HeaderTwo:28px;
+  --TitelWeight:600;
+  --MidSizeFont:14px;
+}
+.nav {
+  flex-grow: 1;
+  z-index: 2;
+}
+.nav_list {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  background: #ddd;
+}
+.nav_list a:nth-child(1) {
+  margin-left: auto;
+}
+
+h1 {
+  padding: 10px;
+  margin: 10px;
+}
+h2{
+  position: relative;
+  font-size: var(--HeaderTwo);
+  left: 25px;
+}
+.main {
+  position: relative;
+  top: 6vh;
+  display: grid;
+  flex-flow: column wrap;
+  max-height: 94vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.main::-webkit-scrollbar{
+  display: none;
+}
+.point-of-interest {
+    margin: 25px;
+}
+.point-of-interest ul{
+  position: relative;
+  list-style: none;
+  font-weight: var(--lightWeight);
+  /* add left offset to bring it under the headline */
+  left:125px;
+  max-width: 50ch;
+  list-style: circle;
+}
+.date {
+  position: relative;
+  font-weight: var(--lightWeight);
+  font-size: var(--DateFont);
+  width: 130px;
+}
+.titel {
+  position: relative;
+  left: 25px;
+  position: relative;
+  font-weight: var(--TitelWeight);
+  font-size:var(--pointOfInterestSize);
+}
+
+.skill td{
+  position: relative;
+  left:25px;
+  margin-left:25px;
+}
+.category{
+  font-size: var(--pointOfInterestSize);
+  width: 150px;
+  font-weight: var(--TitelWeight);
+}
+.bulletpoints{
+  font-weight: var(--lightWeight);
+  max-width: 50ch;
+}
+.resume-hero{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.resume-hero img{
+object-fit: cover;
+width: auto;
+height: 100%;
+float:right;
+}
+
+.slider{
+  position: relative;
+  margin: auto;
+  max-width: 73ch;
+  width: 100%;
+  background: #555;
+}

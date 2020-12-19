@@ -248,7 +248,10 @@ function changeLanguage(language) {
     window.location.href = "index-" + language + ".html";
   }
 }
-
+/**
+ * hide and unhide selected container
+ * @param {int} index 
+ */
 function showCode(index) {
   let container = document.querySelectorAll(".script-container");
   if (index <0) {
