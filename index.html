@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="font-size: 25px;font-family: Merrieweather;">wait a second, you're beeing redirected</p>
+    <script type="text/javascript">
+
+    function provideAddress(){
+        return new Promise( resolve => {
+            if (navigator.language =="de"){
+                resolve("index-de.html");
+            }
+            else
+            {
+                resolve("index-en.html");
+            }
+        });
+    }
+
+    window.addEventListener('load',async ()=>{
+
+        const url = await provideAddress();
+
+        console.log(navigator.language);
+        window.location.href = url;
+    });
+    </script>
+</body>
+</html>
