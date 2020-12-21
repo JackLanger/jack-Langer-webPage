@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
     <link href="../Styles/MainStyle.css" rel="stylesheet" />
@@ -21,7 +21,7 @@
           <a id="nav-myprojects" href="#home">home</a>
           <a id="nav-myprojects" href="#projects-anchor">projects</a>
           <a id="nav-myprojects" href="#aboutMe-anchor">who's Jack</a>
-          <a id="nav-myprojects" href="files/resume-de.html">Resume</a>
+          <a id="nav-myprojects" href="/files/resume-de.html">Lebenslauf</a>
           <!-- <a href="#mail">mail me</a> -->
           <ul
             id="nav-language"
@@ -31,14 +31,14 @@
             <a
               style="cursor: pointer"
               id="nav-myprojects"
-              onclick="changeLanguage('en')"
-              >en</a
+              onclick="changeLanguage('de')"
+              >de</a
             >
             <a
               style="cursor: pointer"
               id="nav-myprojects"
-              onclick="changeLanguage('de')"
-              >de</a
+              onclick="changeLanguage('en')"
+              >en</a
             >
           </ul>
         </ul>
@@ -108,10 +108,10 @@
           <p>Backpackers World Data</p>
         </div>
       </section>
-      <!-- code script  -->
+      <!-- code script -->
       <section id="code-sample">
         <h1 id="code-button">
-          view sample code
+          Arbeits Beispiele
           <ul>
             <li onclick="showCode(0)">TaskHub(C#)</li>
             <li onclick="showCode(1)">Backpackers World Data(JS)</li>
@@ -143,39 +143,43 @@
           <div id="left">
             <article id="about-me-article">
               <span class="flex-content">
-                <h1>About me</h1>
+                <h1>Wer ist Jack</h1>
                 <p>
-                  I'm a Software developer and chef with a love for computers
-                  and travelling.
+                  Hi, ich bin ein Softwareentwickler und gelernter Koch aus dem
+                  schönen Baden-Württemberg.
                 </p>
                 <p>
-                  Having a background in cheffing, I worked at several big
-                  Hotels, finedine restaurants, and relaxed cafees and busy
-                  bars.
+                  Meine Arbeit als Koch hat es mir ermöglicht mehrer Jahre im
+                  Ausland zu verbringen. Erfahrung in großen Hotels und kleinen
+                  cafes und Bars, sowie gehobenen Restaurants zu sammeln.
                 </p>
                 <p>
-                  The most notable would be the
+                  Einige der für mich am hervorragendsten wären das
                   <a
                     href="https://www.goodfood.com.au/cakes-and-ale-sorrento/cakes-and-ale-20151130-473qf"
                     >Cakes and Ale Sorrento
                   </a>
-                  in Victoria, Australia,
+                  in Victoria, Australien, das
                   <a href="https://www.foolsofdesire.co.nz/">Fools of Desire</a>
-                  in Rangiora, New Zealand and
+                  in Rangiora, Neu Seeland und
 
                   <a href="https://www.das-goldene-lamm.de/"
                     >das Goldene Lamm</a
                   >
-                  in Aalen, where I worked as <u class="info">sous chef</u>.
+                  in Aalen, wo ich als
+                  <u class="info">sous chef</u>
+                  tätig war.
                 </p>
                 <p>
-                  When it comes to work my focal points are economics and
-                  process optimization.
+                  Bei meiner Arbeit steht die Wirtschaftlichkeit des Betriebs
+                  stehts im Mittelpunkt. Dazu Analysiere ich laufende Prozesse
+                  und optimiere diese wenn und wo nötig.
                 </p>
                 <p>
-                  Since early 2020 I'm writing software, while working fulltime
-                  as a headchef in a
-                  <u class="info">Pforzheim</u> Kindergarden.
+                  Seit Mai 2019 bin ich Küchenleiter in einer Kita in
+                  <u class="info">Pforzheim</u>
+                  und schreibe seit beginn 2020 aktiv Software. Vorwiegend in
+                  C#, aber auch Webanwendungen in JavaScript.
                 </p>
               </span>
             </article>
@@ -191,14 +195,28 @@
     </article>
     <br /><br />
 
+    <!-- broken -->
     <!-- <article id="mailing-section">
-      <form onsubmit="submitForm()" id="mail" name="EmailForm">
+      <!-- 
+      <form
+      id="mail" 
+      method="POST" 
+      enctype="multipart/form-data"
+      name="EmailForm"> 
+
+      <form
+        id="mail"
+        name="EmailForm"
+        method="POST"
+        enctype="multipart/form-data	"
+        name="EmailForm"
+      >
         <input
           class="contact-input"
           type="text"
           size="19"
-          name="ContactName"
-          placeholder="Name"
+          name="_replyto"
+          placeholder="your email"
           required
         /><br /><br />
         <input
@@ -213,12 +231,12 @@
         <textarea
           class="contact-textarea"
           id="contact-Comment"
-          name="ContectComment"
+          name="message"
           placeholder="your message"
           required
         ></textarea>
         <br /><br />
-        <input class="form-button" id="send-mail" type="submit" value="send" />
+        <input class="form-button" id="send-mail" type="submit" value="send"/>
       </form>
     </article> -->
 
@@ -232,9 +250,11 @@
             >Linked<strong id="linkedIn-text">In</strong></a
           >
           <a id="git" href="https://github.com/JackLanger"
-            ><img src="Media/icons/GitHub-Mark-32px.png" alt="GitHub"
+            ><img src="/Media/icons/GitHub-Mark-32px.png" alt="GitHub"
           /></a>
-          <a href="mailto:jacek.l271186@gmail.com" id="mailme"><img src="/Media/icons/mailTrans.png" alt="mail"/></a>
+          <a href="mailto:jacek.l271186@gmail.com" id="mailme"
+            ><img src="/Media/icons/mailTrans.png" alt="mail"
+          /></a>
         </div>
       </div>
     </footer>
