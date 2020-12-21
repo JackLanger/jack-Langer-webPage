@@ -254,8 +254,11 @@ function changeLanguage(language) {
  */
 function showCode(index) {
   let container = document.querySelectorAll(".script-container");
+  
+  document.getElementById('code-sample').style.overflowY = "scroll";
   if (index <0) {
     console.log("hide");
+    document.getElementById('code-sample').style.overflowY = "hidden";
     for (let i = 0; i < container.length; i++) {
       container[i].style.display = "none";
     }

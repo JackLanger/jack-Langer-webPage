@@ -1,6 +1,11 @@
+var form = document.querySelector('#mail');
+
+form.addEventListener('submit',submitForm);
+
+
 function submitForm (){
     $.ajax({
-        url: '/Person/Edit/@Model.Id/',
+        url: '/Person/Edit/jacek.langer@outlook.de/',
         type: 'post',
         data: $('#myForm').serialize(),
         success: function(){
@@ -8,3 +13,4 @@ function submitForm (){
         }
     });
 }
+

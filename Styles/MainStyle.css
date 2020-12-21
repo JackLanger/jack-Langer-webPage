@@ -58,7 +58,7 @@ header {
 .nav_list a:nth-child(1) {
   margin-left: auto;
 }
-.nav_list a:nth-child(5) {
+.nav_list a:nth-child(4) {
   color: rgba(115, 135, 188, 1);
   margin-left: auto;
 }
@@ -361,6 +361,15 @@ social media links
 #git:hover {
   filter: invert(0.7);
 }
+
+#mailme img{
+  position: relative;
+  top: 8px;
+  height: 40px;
+}
+#mailme img:hover{
+  filter: invert(0.7);
+}
 #linkedIn-text {
   background-color: #333;
   color: #ccc;
@@ -543,7 +552,7 @@ details container
   padding:25px;
   min-height: 60px;
   max-height: 60vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   transition: .3s;
 }
 #code-sample h1:hover{

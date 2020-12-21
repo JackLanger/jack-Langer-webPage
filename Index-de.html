@@ -22,7 +22,7 @@
           <a id="nav-myprojects" href="#projects-anchor">projects</a>
           <a id="nav-myprojects" href="#aboutMe-anchor">who's Jack</a>
           <a id="nav-myprojects" href="files/resume-de.html">Lebenslauf</a>
-          <a href="#mail">mail me</a>
+          <!-- <a href="#mail">mail me</a> -->
           <ul
             id="nav-language"
             onmouseover="showLanguages()"
@@ -195,14 +195,28 @@
     </article>
     <br /><br />
 
-    <article id="mailing-section">
-      <form onsubmit="submitForm()" id="mail" name="EmailForm">
+    <!-- broken -->
+    <!-- <article id="mailing-section">
+      <!-- 
+      <form
+      id="mail" 
+      method="POST" 
+      enctype="multipart/form-data"
+      name="EmailForm"> 
+
+      <form
+        id="mail"
+        name="EmailForm"
+        method="POST"
+        enctype="multipart/form-data	"
+        name="EmailForm"
+      >
         <input
           class="contact-input"
           type="text"
           size="19"
-          name="ContactName"
-          placeholder="Name"
+          name="_replyto"
+          placeholder="your email"
           required
         /><br /><br />
         <input
@@ -217,20 +231,18 @@
         <textarea
           class="contact-textarea"
           id="contact-Comment"
-          name="ContectComment"
+          name="message"
           placeholder="your message"
           required
         ></textarea>
         <br /><br />
-        <input class="form-button" id="send-mail" type="submit" value="send" />
+        <input class="form-button" id="send-mail" type="submit" value="send"/>
       </form>
-    </article>
+    </article> -->
 
     <br />
     <footer>
       <div class="footer-content">
-        <p>copyright</p>
-        <p>disclaimer</p>
         <div class="social-media-link">
           <a
             id="linked"
@@ -238,7 +250,10 @@
             >Linked<strong id="linkedIn-text">In</strong></a
           >
           <a id="git" href="https://github.com/JackLanger"
-            ><img src="\Media\GitHub-Mark-32px.png" alt="GitHub"
+            ><img src="Media\GitHub-Mark-32px.png" alt="GitHub"
+          /></a>
+          <a href="mailto:jacek.l271186@gmail.com" id="mailme"
+            ><img src="/Media/icons/mailTrans.png" alt="mail"
           /></a>
         </div>
       </div>
